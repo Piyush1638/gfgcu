@@ -10,12 +10,17 @@ export default {
     extend: {
       textColor: {
         'gfg-green': '#5d9e52',
+        "custom-violet": "#0f2553",
+        'gfg-dark': "#414341"
       },
       backgroundColor:{
         "gfg-green": '#5d9e52',
         "custom-grey" : '#d9d9d9',
         "custom-dark" : '#414341',
-        "custom-dark-2" : '#242424'
+        "custom-dark-2" : '#242424',
+        "green-blue"  : "#a8e6c3",
+        "custom-blue" : "#a2d1e5",
+        "custom-black" : "#363636",
       }
     },
   },

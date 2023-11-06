@@ -26,7 +26,6 @@
 // Importing fromo react
 import { BrowserRouter,Routes, Route } from 'react-router-dom';
 import { useState, useEffect } from 'react';
-import './App.css'
 
 // Importing Pages
 import HomePage from './pages/HomePage';
@@ -34,6 +33,8 @@ import EventsPage from './pages/EventsPage';
 import Competitions from './pages/Competitions';
 import BlogsPage from './pages/BlogsPage';
 import AboutUs from './pages/AboutUs';
+import Login from './pages/Login';
+import Registration from "./pages/Registration";
 
 // ThemeProvide for dark and light theme
 import { ThemeProvider } from './contexts/theme';
@@ -66,6 +67,8 @@ function App() {
         <Route path="/competitions" element={<Competitions/>}/>
         <Route path="/blogs" element={<BlogsPage/>}/>
         <Route path="/about-us" element={<AboutUs/>}/>
+        <Route path="/login" element={<Login/>}/>
+        <Route path="/register" element={<Registration/>}/>
       </Routes>
       </ThemeProvider>
     </BrowserRouter>
