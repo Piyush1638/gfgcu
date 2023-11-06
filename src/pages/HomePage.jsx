@@ -1,24 +1,20 @@
+import { Link } from "react-router-dom";
 import { gsap } from "gsap/gsap-core";
-import ScrollTrigger from 'gsap/ScrollTrigger'; // Import ScrollTrigger from GSAP
+import ScrollTrigger from "gsap/ScrollTrigger"; // Import ScrollTrigger from GSAP
 
 import Layout from "../components/layouts/Layout";
 import "../css-files/HomePage.css";
-import slide1 from "../assets/events-img/event-img-1.jpg";
-import slide2 from "../assets/events-img/event-img-2.jpg";
+
 import fb from "../assets/icons/facebook.svg";
 import insta from "../assets/icons/instagram.svg";
 import linkedIn from "../assets/icons/linkedin.svg";
 import gmail from "../assets/icons/envelop.svg";
-import slide3 from "../assets/events-img/event-img-3.jpg";
 import qr from "../assets/events-img/event-img-1.jpg";
-import { Link } from "react-router-dom";
 import Slider from "../components/Slider";
-import { useEffect, useRef } from "react";
 
 gsap.registerPlugin(ScrollTrigger); // Register the ScrollTrigger plugin
 
 const HomePage = () => {
-
   const blogs = [
     {
       id: 1,
@@ -47,12 +43,14 @@ const HomePage = () => {
     },
   ];
 
-
   return (
     <Layout>
       <div className="homePage bg-custom-grey dark:bg-custom-dark">
         {/* Upcoming Events */}
-        <section id="upcoming-contests" className="w-full  dark:bg-custom-dark bg-gfg-green h-2/5 p-4 flex flex-col">
+        <section
+          id="upcoming-contests"
+          className="w-full  dark:bg-custom-dark bg-gfg-green h-2/5 p-4 flex flex-col"
+        >
           <h1 className="text-white font-bold text-2xl sm:text-3xl my-7">
             Upcoming Events
           </h1>
@@ -63,9 +61,7 @@ const HomePage = () => {
 
         {/* Blogs Section */}
         <section className="text-center px-2 py-5 md:text-left md:p-[30px] dark:bg-white text-black ">
-          <h1 className="text-xl font-semibold md:font-bold mb-5 ">
-            Blog Spot
-          </h1>
+          <h1 className="font-bold text-2xl sm:text-3xl my-7">Blog Spot</h1>
           <div className="flex justify-center items-center gap-4 font-[500] text-[darkBlue] text-base capitalize md:justify-end">
             <a className="" href="#">
               Update
@@ -97,8 +93,9 @@ const HomePage = () => {
           </div>
           {/* Write Blog */}
           <div className="flex items-center justify-center dark:text-black">
-            <Link to="/blogs"
-              className="bg-gfg-green dark:bg-custom-dark w-fit py-2 px-6 rounded-lg text-white font-[500] text-base tracking-widest"
+            <Link
+              to="/blogs"
+              className="bg-gfg-green hover:bg-custom-dark dark:bg-custom-dark hover:dark:bg-gfg-green w-fit py-2 px-6 rounded-lg text-white font-[500] text-base tracking-widest"
             >
               See More
             </Link>
@@ -107,19 +104,29 @@ const HomePage = () => {
 
         {/* Vacancies Section */}
         <section className="text-center px-2 py-5 bg-gfg-green md:text-left md:p-[30px] dark:bg-custom-dark my-5">
-          <h1 className="text-xl font-semibold md:font-bold mb-5 capitalize ">
+          <h1 className="text-xl text-center font-semibold md:font-bold mb-5 capitalize ">
             Vacancies for the core team
           </h1>
           {/* Roles */}
           <div className="vacancy">
             <div className="text-left px-4">
-              <h2 className="text-[18px] font-semibold sm:font-bold">
-                Applicable Roles
-              </h2>
-              <div className="flex flex-col py-2 px-5 text-base capitalize md:gap-5">
-                <h3 className="font-semibold">Code Rusher</h3>
-                <h3 className="font-semibold">Event Manager</h3>
-                <h3 className="font-semibold">Content Writer </h3>
+              <div>
+                <img src="" alt="" />
+              </div>
+
+              <div>
+                <h2 className="text-[18px] font-semibold sm:font-bold">
+                  Applicable Roles
+                </h2>
+                <div className="flex flex-col py-2 px-5 text-base capitalize md:gap-5">
+                  <h3 className=" cursor-pointer font-semibold">Code Rusher</h3>
+                  <h3 className="cursor-pointer font-semibold">
+                    Event Manager
+                  </h3>
+                  <h3 className="cursor-pointer font-semibold">
+                    Content Writer{" "}
+                  </h3>
+                </div>
               </div>
             </div>
             {/* For Joining */}

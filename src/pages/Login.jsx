@@ -13,7 +13,7 @@ const Login = () => {
         </div>
 
         <div className="right sm:w-1/2 w-full h-screen items-center flex justify-center">
-          <form className=" w-4/5 z-10 bg-tr authentication flex p-3 flex-col glassmorphism">
+          <form className="authentication w-4/5 z-10 bg-tr authentication flex p-3 flex-col glassmorphism">
             <h1 className="font-medium text-center text-2xl my-4">
               Login with credentials
             </h1>

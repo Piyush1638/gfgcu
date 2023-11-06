@@ -88,7 +88,7 @@ const BlogsPage = () => {
 
         {/* Pre fotter */}
         <section className="relative  dark:bg-custom-dark bg-gfg-green p-4  h-4/5">
-          <div className="bg-white  dark:text-white dark:bg-custom-dark-2 p-8">
+          <div className="bg-white rounded-md  dark:text-white dark:bg-custom-dark-2 p-8">
             <div className="items-center justify-center p-5 dark:bg-custom-dark">
               <h1 className="text-center font-bold text-3xl pb-5">
                 Want to share your own experience?

@@ -35,13 +35,12 @@ const Navbar = () => {
       id: 3,
       path: "/blogs",
       text: "Blogs",
-
     },
     {
-      id:4,
-      path:"/about-us",
-      text:"About Us"
-    }
+      id: 4,
+      path: "/about-us",
+      text: "About Us",
+    },
   ];
 
   return (
@@ -99,7 +98,10 @@ const Navbar = () => {
         })}
 
         {!auth ? (
-          <Link to="/login"  className="text-slate-100 bg-gfg-green p-3 rounded-md font-semibold mx-4 my-2 md:my-2">
+          <Link
+            to="/login"
+            className="text-slate-100 bg-gfg-green p-3 rounded-md font-semibold mx-4 my-2 md:my-2"
+          >
             Login/SignUp
           </Link>
         ) : (
@@ -107,7 +109,9 @@ const Navbar = () => {
             Logout
           </button>
         )}
-        <ThemBtn />
+        <div className="p-3 sm:my-0 my-2">
+          <ThemBtn />
+        </div>
       </ul>
     </nav>
   );

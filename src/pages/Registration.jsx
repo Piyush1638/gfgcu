@@ -11,9 +11,9 @@ const Registration = () => {
         </div>
 
         <div className="right sm:w-1/2 w-full h-screen items-center flex justify-center">
-          <form className=" flex p-3 flex-col glassmorphism sm:w-full w-4/5 sm:mx-7 mx-0">
+          <form className="authentication backdrop-brightness-50 flex p-3 flex-col glassmorphism sm:w-full w-4/5 sm:mx-7 mx-0">
             <h1 className="font-medium text-center text-2xl my-4">
-              Login with credentials
+              Sign Up with your email
             </h1>
             <div className="flexflex-col">
               <div className="flex flex-col my-3">
@@ -70,7 +70,7 @@ const Registration = () => {
 
             <div className=" p-3 flex items-center gap-2 sm:flex-row flex-col justify-between">
               <button className="bg-gfg-green my-3 text-base sm:text-lg  text-white rounded-md px-5 py-2 sm:px-4 sm:py-2 lg:px-5 lg:py-2">
-                Login
+                Register Me
               </button>
               <Link to="/login" className="text-sm mx-4">
                 Already a user?{" "}

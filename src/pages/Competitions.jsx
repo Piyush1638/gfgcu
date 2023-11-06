@@ -1,40 +1,29 @@
 import Layout from "../components/layouts/Layout";
+import Slider2 from "../components/Slider2";
+import "../css-files/Slider.css";
 
 const Competitions = () => {
   return (
     <Layout>
       <section
         id="upcoming-competitions"
-        className="p-3 bg-gfg-green dark:bg-custom-dark"
+        className="py-6 px-3 pb-10 bg-gfg-green dark:bg-custom-dark"
       >
-        <h2 className="text-2xl font-bold text-center m-5 text-white">
+        <h2 className="text-white font-bold text-2xl sm:text-3xl my-7">
           Upcoming Competitions
         </h2>
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
-          {Array.from({ length: 3 }, (_, i) => (
-            <div key={i} className="my-3">
-              <div className="bg-white p-3 shadow-lg rounded-lg flex flex-col items-center">
-                <img
-                  src="https://img.freepik.com/free-vector/laptop-with-program-code-isometric-icon-software-development-programming-applications-dark-neon_39422-971.jpg?size=626&ext=jpg&ga=GA1.1.867424154.1698192000&semt=sph"
-                  alt={`Image ${i + 1}`}
-                  className="w-full object-contain aspect-auto"
-                />
-                <button className="mt-4 bg-green-500 text-white py-2 px-4 rounded-md hover:bg-green-600">
-                  Attempt Now
-                </button>
-              </div>
-            </div>
-          ))}
+        <div className="slider flex m-auto w-full sm:w-1/2 h-auto relative">
+          <Slider2 />
         </div>
       </section>
 
       {/* Past Competitons */}
 
       <section id="past-competitions" className="p-4 bg-slate-100">
-        <h2 className="text-2xl font-bold text-center text-black m-5">
+        <h2 className="font-bold dark:text-black text-2xl sm:text-2xl my-3">
           Past Competitions
         </h2>
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+        <div className="grid grid-cols-2 my-6 sm:grid-cols-2 md:grid-cols-3 gap-4">
           {Array.from({ length: 3 }, (_, i) => (
             <div key={i}>
               <div className="bg-white p-3 shadow-lg rounded-lg flex flex-col items-center">
@@ -55,7 +44,7 @@ const Competitions = () => {
         id="weekly-contests"
         className="p-4 bg-gfg-green dark:bg-custom-dark"
       >
-        <h2 className="text-2xl font-bold text-center text-white">
+        <h2 className="font-bold text-white text-2xl sm:text-2xl my-3">
           Weekly Contest
         </h2>
         <div className="p-3 space-y-4">
