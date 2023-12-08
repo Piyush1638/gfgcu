@@ -36,9 +36,11 @@ import AboutUs from './pages/AboutUs';
 import Login from './pages/Login';
 import Registration from "./pages/Registration";
 import BlogPage from './pages/BlogPage';
+import Profile from './pages/Profile';
 
 // ThemeProvide for dark and light theme
 import { ThemeProvider } from './contexts/theme';
+import EditProfile from './pages/EditProfile';
 
 
 
@@ -64,6 +66,8 @@ function App() {
 
       <Routes>
         <Route path="/" element={<HomePage/>}/>
+        <Route path='/profile' element={<Profile/>}/>
+        <Route path="/profile/edit-profile" element={<EditProfile/>}/>
         <Route path="/events" element={<EventsPage/>}/>
         <Route path="/competitions" element={<Competitions/>}/>
         <Route path="/blogs" element={<BlogsPage/>}/>
